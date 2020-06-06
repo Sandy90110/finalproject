@@ -123,13 +123,13 @@ namespace TA
            //check whether the pos is legal
 			//1. out of range
 			if(pos.first>8 || pos.first<0 || pos.second>8 || pos.second <0){
-				puts("pos out of range\n");
+				putToGui("pos out of range\n");
 				//updateGuiGame(); 
 				return false;	
 			}
 			//2. already occupied
 			if(MainBoard.get(pos.first,pos.second)!=BoardInterface::Tag::None){
-				puts("pos already occupied\n");
+				putToGui("pos already occupied\n");
 				//updateGuiGame();
 				return false;
 			}
